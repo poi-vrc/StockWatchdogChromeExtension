@@ -1,0 +1,17 @@
+{
+    "name": "StockWatchdogChromeExtension",
+    "description": "Allows your chrome to be used as a request task distribution node for StockWatchdog.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": [ "storage", "activeTab", "tabs", "<all_urls>" ],
+    "background": {
+        "scripts": [ "socket.io.js", "background.js" ]
+    },
+    "content_scripts": [
+        {
+            "matches": [ "<all_urls>" ],
+            "js": [ "content.js" ],
+            "run_at": "document_end"
+        }
+    ]
+}
