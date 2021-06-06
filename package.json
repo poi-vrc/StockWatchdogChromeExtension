@@ -1,0 +1,40 @@
+{
+  "name": "stockwatchdogchromeextension",
+  "version": "1.0.0",
+  "description": "StockWatchdog Chrome Extension",
+  "main": "background.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poi-vrc/StockWatchdogChromeExtension.git"
+  },
+  "author": "poi-vrc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poi-vrc/StockWatchdogChromeExtension/issues"
+  },
+  "homepage": "https://github.com/poi-vrc/StockWatchdogChromeExtension#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/chrome": "0.0.144",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "copy-webpack-plugin": "^9.0.0",
+    "html-webpack-plugin": "^5.3.1",
+    "ts-loader": "^9.2.3",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-bootstrap": "^1.6.1",
+    "react-dom": "^17.0.2"
+  }
+}
